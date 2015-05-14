@@ -12,7 +12,7 @@ namespace FunctionalPipe
         /// <summary>
         /// Retorna uma nova instância de Func<T, Rafter> cuja execução é igual à
         /// chamada de self seguida de after.
-        /// O resultado de sel é passado como argimento a after.
+        /// O resultado de self é passado como argumento a after.
         /// </summary>
         public static Func<T, Rafter> AndThen<T, Rself, Rafter>(
             this Func<T, Rself> self,
